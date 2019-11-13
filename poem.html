@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poems&Articles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+body {
+  margin: 0;
+  background-color: #f2f2f0; 
+}
+
+hr{
+color: #048998;
+width: 50%;
+margin: 20px auto;
+
+}
+h1{
+  text-align: center;
+ 
+  font-size: 400%;
+}
+h2{
+  text-align: center;
+  color: #048998;
+  font-size: 45px;
+}
+
+h3{
+  
+  color: #048998;
+  font-size: 30px;
+  
+}
+
+p{
+  color: #048998;
+  font-size: 25px;
+
+}
+.nav{
+  background-color: #41AAA8;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #41AAA8;
+  width:70%;
+
+}
+
+ul.topnav li {
+  float: right;
+  
+}
+
+ul.topnav li a {
+  display: block;
+  color: #105E62;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+ul.topnav li a:hover:not(.active) {color: #A2EAE2;}
+
+ul.topnav li a.active {color: #105E62;}
+
+ul.topnav li.right {float: right;}
+
+ul.topnav li.left {float: left;}
+
+.mascot{
+  border-radius: 100%;
+  width: 10%;
+  margin: 2px;
+  float:left
+}
+.top-container{
+  
+  font-family: cursive;
+  background-color: #D7F7F5;
+  color: #048998;
+}
+.up-container{
+  
+  font-family: cursive;
+  background-color: #D7F7F5;
+  color: #048998;
+  width:60%;
+  margin: auto;
+}
+.middle-container{
+ 
+  
+  font-family: cursive;
+  width:60%;
+  margin: auto;
+}
+.bottom-container{
+  font-family: cursive;
+  width:60%;
+  margin: auto;
+}
+.land
+{
+ 
+  position: relative;
+  left:300px;
+  color: #048998;
+}
+.sun
+{
+  position: relative;
+  left:1000px;
+  width:7%;
+  margin: 20px 0 0;
+}
+.soti{
+  float: left;
+ width: 20%;
+  border-radius: 50%;
+  margin:0 50px 0 0;
+}
+.khana{
+  float: right;
+ width: 20%;
+  border-radius: 50%;
+  margin: 0 0 0 50px;
+}
+
+.skill-row{
+  text-align: left;
+  margin:100px 0 100px;
+  
+}
+
+.center{
+  text-align: center;
+}
+
+.hey{
+  text-align: center;
+  border-radius: 50%;
+  width: 20%;
+
+}
+.harsh{
+  text-align: center;
+  margin: 50px auto 50px;
+
+}
+.profile{
+  margin: auto;
+  text-align: center;
+}
+
+
+
+/*---------------------------------------------------------------------slideshow styling--------------------------------------------*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 22%;
+  margin: auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 60%;
+  margin: auto;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+ 
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 14.28%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.align{
+  width: 60%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+.row1{
+  width: 50%;
+  margin: auto;
+}
+
+/* Three columns side by side */
+.column1{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*------------------------------------------------Button Styling-----------------------------------------------------------------------------------*/
+.butn {
+  background: #b0f4e6;
+  background-image: -webkit-linear-gradient(top, #b0f4e6, #67eaca);
+  background-image: -moz-linear-gradient(top, #b0f4e6, #67eaca);
+  background-image: -ms-linear-gradient(top, #b0f4e6, #67eaca);
+  background-image: -o-linear-gradient(top, #b0f4e6, #67eaca);
+  background-image: linear-gradient(to bottom, #b0f4e6, #67eaca);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #105e62;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width:5%;
+  margin: 0 40% 0 40%;
+}
+
+.butn:hover {
+  background: #c8E6f5;
+  background-image: -webkit-linear-gradient(top, #c8E6f5, #00b7e8);
+  background-image: -moz-linear-gradient(top, #c8E6f5, #00b7e8);
+  background-image: -ms-linear-gradient(top, #c8E6f5, #00b7e8);
+  background-image: -o-linear-gradient(top, #c8E6f5, #00b7e8);
+  background-image: linear-gradient(to bottom, #c8E6f5, #00b7e8);
+  text-decoration: none;
+}
+
+</style>
+
+<body  >
+<div class="nav">
+<ul class="topnav">
+  
+  <li class="left"><a href="#news"><img  class="mascot" src="https://i.ibb.co/NsYBG3r/IMG-20190124-180445-HHT.jpg" border="0" alt="bandariya" ></a></li>
+  
+<li><a  href="My corner.html" style="padding: 20px;"><b>My Corner</b></a></li>
+  <li><a href="Wishes.html" style="padding: 20px;"><b>Messages</b></a></li>
+  <li><a href="Wishes.html" style="padding: 20px;"><b>Your Skills</b></a></li>
+
+
+
+  <li><a class="active" href="#" style="padding: 20px;"><b>Home</b></a></li>
+  <li class="right" style="padding: 20px;"><a href="#about"></a></li>
+</ul>
+</div>
+
+
+<img src="https://i.ibb.co/pnwr2RF/Whats-App-Image-2019-11-11-at-2-53-30-PM-1.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-30-PM-1" border="0">
+<img src="https://i.ibb.co/m4TxFqr/Whats-App-Image-2019-11-11-at-2-53-30-PM-2.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-30-PM-2" border="0">
+<img src="https://i.ibb.co/JRstRg8/Whats-App-Image-2019-11-11-at-2-53-31-PM-3.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-31-PM-3" border="0">
+<img src="https://i.ibb.co/cg733p0/Whats-App-Image-2019-11-11-at-2-53-31-PM-4.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-31-PM-4" border="0">
+<img src="https://i.ibb.co/m5vQPfY/Whats-App-Image-2019-11-11-at-2-53-31-PM-5.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-31-PM-5" border="0">
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+        <img src="https://i.ibb.co/mXy7zK9/IMG-20190204-134437.jpg" border="0" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+        <img src="https://i.ibb.co/kSbp1mp/IMG-20190415-085257.jpg" alt="IMG-20190415-085257" border="0" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+        <img src="https://i.ibb.co/37fqS9k/IMG-20190621-122935.jpg" alt="IMG-20190621-122935" border="0" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+        <img src="https://i.ibb.co/3WRRX8P/Whats-App-Image-2019-11-11-at-2-53-31-PM.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-31-PM" border="0" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+          <img src="https://i.ibb.co/FK24PJ7/Whats-App-Image-2019-11-11-at-12-17-13-AM.jpg" alt="Whats-App-Image-2019-11-11-at-12-17-13-AM" border="0" style="width:100%">
+      </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+        <img src="https://i.ibb.co/phZB637/Whats-App-Image-2019-11-11-at-3-12-35-PM.jpg" alt="Whats-App-Image-2019-11-11-at-3-12-35-PM" border="0" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+        <img src="https://i.ibb.co/Wy2sN9H/Whats-App-Image-2019-11-11-at-2-53-31-PM-1.jpg" alt="Whats-App-Image-2019-11-11-at-2-53-31-PM-1" border="0" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="align">
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="https://i.ibb.co/mXy7zK9/IMG-20190204-134437.jpg" style="width:100%" onclick="currentSlide(1)" alt="Happy Birthday Muski">
+      </div>
+      <div class="column"> 
+        <img class="demo cursor" src="https://i.ibb.co/kSbp1mp/IMG-20190415-085257.jpg" style="width:100%" onclick="currentSlide(2)" alt="Kitni serious rehti hai tu">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://i.ibb.co/37fqS9k/IMG-20190621-122935.jpg" style="width:100%" onclick="currentSlide(3)" alt="Haye ye smile.....">
+      </div>
+      <div class="column">
+          <img class="demo cursor" src="https://i.ibb.co/3WRRX8P/Whats-App-Image-2019-11-11-at-2-53-31-PM.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kitni beautiful lg rhi hai tu isme">
+        </div>
+      <div class="column">
+        <img class="demo cursor" src="https://i.ibb.co/FK24PJ7/Whats-App-Image-2019-11-11-at-12-17-13-AM.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yr teri smile kitni pyaari hai">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://i.ibb.co/phZB637/Whats-App-Image-2019-11-11-at-3-12-35-PM.jpg" style="width:100%" onclick="currentSlide(6)" alt="Dekh isme bhi kitni serious hai bechari kitni tension hai life mai">
+      </div> 
+      <div class="column">
+        <img class="demo cursor" src="https://i.ibb.co/Wy2sN9H/Whats-App-Image-2019-11-11-at-2-53-31-PM-1.jpg" style="width:100%" onclick="currentSlide(7)" alt="ye dekh isme bhi kitni beautiful hai. Mujhe ye samajh nhi aa raha mai itni tareef q kar rha hun">
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+<hr>
+
+
+
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+</script>
+
+
+</body>
+</html>

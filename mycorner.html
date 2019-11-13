@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Corner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+  margin: 0;
+  background-color: #f2f2f0; 
+}
+
+hr{
+color: #048998;
+width: 50%;
+margin: 20px auto;
+
+}
+h1{
+  text-align: center;
+ 
+  font-size: 400%;
+}
+h2{
+  text-align: center;
+  color: #048998;
+  font-size: 45px;
+}
+
+h3{
+  
+  color: #048998;
+  font-size: 30px;
+  
+}
+
+p{
+  color: #048998;
+  font-size: 25px;
+
+}
+.nav{
+  background-color: #41AAA8;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #41AAA8;
+  width:70%;
+
+}
+
+ul.topnav li {
+  float: right;
+  
+}
+
+ul.topnav li a {
+  display: block;
+  color: #105E62;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+ul.topnav li a:hover:not(.active) {color: #A2EAE2;}
+
+ul.topnav li a.active {color: #105E62;}
+
+ul.topnav li.right {float: right;}
+
+ul.topnav li.left {float: left;}
+
+.mascot{
+  border-radius: 100%;
+  width: 10%;
+  margin: 2px;
+  float:left;
+}
+.top-container{
+  
+  font-family: cursive;
+  background-color: #D7F7F5;
+  color: #048998;
+}
+.up-container{
+  
+  font-family: cursive;
+  background-color: #D7F7F5;
+  color: #048998;
+  width:60%;
+  margin: auto;
+}
+.middle-container{
+ 
+  
+  font-family: cursive;
+  width:60%;
+  margin: auto;
+}
+.bottom-container{
+  font-family: cursive;
+  width:60%;
+  margin: auto;
+}
+.land
+{
+ 
+  position: relative;
+  left:300px;
+  color: #048998;
+}
+.sun
+{
+  position: relative;
+  left:1000px;
+  width:7%;
+  margin: 20px 0 0;
+}
+.soti{
+  float: left;
+ width: 20%;
+  border-radius: 50%;
+  margin:0 50px 0 0;
+}
+.khana{
+  float: right;
+ width: 20%;
+  border-radius: 50%;
+  margin: 0 0 0 50px;
+}
+
+.skill-row{
+  text-align: left;
+  margin:100px 0 100px;
+  
+}
+
+.center{
+  text-align: center;
+}
+
+.hey{
+  text-align: center;
+  border-radius: 50%;
+  width: 20%;
+
+}
+.harsh{
+  text-align: center;
+  margin: 50px auto 50px;
+
+}
+.profile{
+  margin: auto;
+  text-align: center;
+}
+
+
+
+/*---------------------------------------------------------------------slideshow styling--------------------------------------------*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 40%;
+  margin: auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 60%;
+  margin: auto;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+ 
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 14.28%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.align{
+  width: 60%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+.row1{
+  width: 50%;
+  margin: auto;
+}
+
+/* Three columns side by side */
+.column1{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+</style>
+<body  >
+<div class="nav">
+<ul class="topnav">
+  <li class="left"><a href="#news"><img  class="mascot" src="https://i.ibb.co/NsYBG3r/IMG-20190124-180445-HHT.jpg" border="0" alt="bandariya" ></a></li>
+  
+  <li><a href="game.html" style="padding: 20px;"><b>Our Kuch Kuch Hota Hai</b></a></li>
+  <li><a href="poem.html" style="padding: 20px;"><b>Poems&Articles</b></a></li>
+<li><a  href="birthdayyy.html" style="padding: 20px;"><b>Home</b></a></li>
+<li><a class="active" href="#" style="padding: 20px;"><b>My Corner</b></a></li>
+
+
+</ul>
+</div>
+
+
+
+<div class="middle-container">
+    <div class="skills">
+    <h2>What Is She Known For</h2>
+    <div class="skill-row" >
+        <img class="soti" src="img/makeup.jpeg" alt="">
+        <h3>Makeup Skills</h3>
+        <p>You definately cannot question her makeup skills, they are god level as evident from the photo.</p>
+      </div>
+    <div class="skill-row" >
+        <img class="khana" src="img/khana.jpeg" alt="">
+        <h3>Eating all the Time</h3>
+        <p>This creature wants something to eat all the time. If you want to get rid of her nonsense talks, just feed her.</p>
+      </div>
+      <div class="skill-row" >
+          <img class="soti" src="img/party.jpeg" alt="">
+          <h3>Party Animal</h3>
+          <p>Animal she is, no doubt about that, she resembles them in each form but she also attends parties so maybe we an call her a party animal.</p>
+        </div>
+    
+      <div class="skill-row" >
+          <img class="khana" src="img/drinks.jpeg" alt="">
+          <h3>Helpful in finishing Drinks</h3>
+          <p>This creature can help you when you are not able to finish your drinks all alone.</p>
+        </div>
+        <div class="skill-row" >
+            <img class="soti" src="img/soti.jpeg" alt="">
+            <h3>Sleeping All Day</h3>
+            <p>This creature is capable of sleeping all day. In maharani ko itti neend aati hai ki ye so-so kar thak jaati hai, aur is wjh se phir sone chali jaati hai.</p>
+        </div>
+        <div class="skill-row" >
+            <img class="khana" src="img/model.jpeg" alt="">
+            <h3>Someone said Glamour?</h3>
+            <p>O yeah I just almost forgot to tell you about her posing skills, she could definately turn out to be a model.</p>
+          </div>
+
+  </div>
+  <hr>
+</body>
+</html>
